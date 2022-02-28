@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:ap-south-1:244714571883:task-def/task-def:1"
         LoadBalancerInfo:
-          ContainerName: "087ba4f2057b42828d8dab63f229cdcc"
+          ContainerName: "i-09be886fdf7c4220c"
           ContainerPort: 3000

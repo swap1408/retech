@@ -18,7 +18,4 @@ phases:
       - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:latest
   artifacts:
     files:
-      - '**/*'
-    base-directory: base_dir
-    name: build
-    discard-paths: no
+      - imageDetail.json

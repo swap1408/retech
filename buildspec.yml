@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t docker-repo . 
+      - docker build -t docker-repo .
       - docker tag the-example-app.nodejs:latest 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:the-example-app.nodejs
   post_build:
     commands:

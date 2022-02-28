@@ -19,8 +19,9 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:latest
-      - printf '[{"name":"hello-server","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
 artifacts:
   files:
     - imageDetail.json
+    - imagedefinitions.json

@@ -18,5 +18,7 @@ phases:
       - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:latest
   artifacts:
     files:
-    - '**/*'
-    name: s3-to-s3-latest-build.zip
+      - '**/*'
+    base-directory: base_dir
+    name: build
+    discard-paths: no

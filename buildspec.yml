@@ -18,6 +18,6 @@ phases:
       - echo Pushing the Docker image...
       - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:latest
       - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
-  artifacts:
-    files:
-      - imageDetail.json
+artifacts:
+  files:
+    - imageDetail.json

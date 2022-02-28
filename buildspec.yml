@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t docker-repo:the-example-app-nodejs .
-      - docker tag the-example-app.nodejs:latest 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:the-example-app-nodejs
+      - docker build -t docker-repo:the-example-app.nodejs .
+      - docker tag the-example-app.nodejs:latest 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:the-example-app.nodejs
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:the-example-app-nodejs
+      - docker push 244714571883.dkr.ecr.ap-south-1.amazonaws.com/docker-repo:the-example-app.nodejs

@@ -1,5 +1,9 @@
 version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /var/www/html/WordPress
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:244714571883:task-def/task-def:1"
+        LoadBalancerInfo:
+          ContainerName: "087ba4f2057b42828d8dab63f229cdcc"
+          ContainerPort: 3000

@@ -19,7 +19,7 @@ const routes = require('./routes/index')
 const { getSpace, getLocales } = require('./services/contentful')
 const { catchErrors } = require('./handlers/errorHandlers')
 
-const SETTINGS_NAME = 'theExampleAppSettings'
+const SETTINGS_NAME = 'theExaAppSettings'
 
 const app = express()
 
